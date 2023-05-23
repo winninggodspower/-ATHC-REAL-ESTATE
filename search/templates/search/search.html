@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-searchresults{% endblock %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+
+{% include "default_routes/components/navbar.html" %}
+
+<h1 class="text-center text-xl md:text-5xl font-inter mt-10 ">Search Results</h1>
+
+{% include "search/search-form.html" %}
+
+{% if search_results %}
+    <h3 class="text-center text-lg md:text-3xl italic mb-56">{{search_results|length}} search result found.</h3>
+
+    <section class="w-[92%] mx-auto font-poppins mb-[146px] md:mb-[249px]">
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(100%,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(411px,1fr))] justify-items-center gap-y-[102px] md:gap-y-[124px] max-w-full">    
+
+            {% for post in search_results %}
+                {% with post.specific as post %}
+                    {% include "blog/blog_card.html" %}
+                {% endwith %}
+            {% endfor %}
+
+        </div>
+    </section>
+
+    {% if search_results.has_previous %}
+        <a href="{% url 'search' %}?query={{ search_query|urlencode }}&amp;page={{ search_results.previous_page_number }}">Previous</a>
+    {% endif %}
+
+    {% if search_results.has_next %}
+        <a href="{% url 'search' %}?query={{ search_query|urlencode }}&amp;page={{ search_results.next_page_number }}">Next</a>
+    {% endif %}
+
+{% elif search_query %}
+    <h3 class="text-center text-lg md:text-3xl italic">No results found for <span class="text-primary_green mb-80">"{{search_query}}"</span></h3>
+{% endif %}
+
+{% include "default_routes/components/footer.html" %}
+
+{% endblock %}

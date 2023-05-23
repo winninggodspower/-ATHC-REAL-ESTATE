@@ -1,0 +1,13 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="article">
+    {% if post.image %}
+        {% image post.image class="w-[326px] max-w-[95%] h-[299px] md:w-[385px] md:h-[358px] rounded-2xl md:rounded-[20px] object-cover" fill-160x100 %}
+    {% endif %}
+
+    <h3 class="text-[25px] md:text-[30px] leading-[33.44px] md:leading-[40px] mt-8 md:mt-10"><a href="{% pageurl post %}">{{ post.title }}</a></h3>
+    <div class="mt-3 md:mt-4 text-xl md:text-2xl font-normal leading-6 md:leading-[30px]">
+    {{ post.intro|truncatewords:22 }} 
+    </div>
+    <a class="article-link" href="{% pageurl post %}">Read more</a>
+</div>

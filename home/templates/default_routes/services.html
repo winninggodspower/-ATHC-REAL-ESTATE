@@ -1,0 +1,149 @@
+{% extends 'default_routes/layout.html' %}  
+{% load humanize %}
+
+{% block head %}
+  <title>ATHC | Home</title>
+{% endblock %}
+
+{% block body %}
+  <section id="section-1" class="h-[283px] md:h-[833px] object-contain object-left bg-cover bg-no-repeat" style="background-image: linear-gradient(rgba(57,51,51,0.1), rgba(57,51,51,0.1)), url(/static/img/services-hero.png);">
+    <div class="w-full h-full flex flex-col items-center justify-center ">
+        <h1 class="text-center text-white font-poppins font-semibold text-5xl md:text-9xl ">OUR SERVICES</h1>
+
+        <a href="#" class="md:hidden">
+          <img src="../static/img/icons/whatsapp-mobile-icon.png" width="81px" height="33px" alt="">
+        </a>
+
+    </div>
+    
+  </section>
+
+
+  <section class="my-16 md:my-[113px] px-5 ">
+    <p class="text-center md:text-start w-[1270px] mx-auto max-w-full font-inter text-xl md:text-3xl leading-9 md:leading-[60px]">At ATHC, we believe that everyone can gain financial freedom with making the right investment in real estate, hence it is our mandate to make the smallest of persons achieve their financial goals and security with our services and mind blowing offers. These and many more listed below are our tried and trusted services.
+    </p>
+  </section>
+
+
+  <section class="w-[1270px] max-w-full px-5 mx-auto">
+    <h2 class="text-center md:text-start mb-12 md:mb-[71px]">View available lands for sale </h2>
+
+    <div class="sm:mx-3 md:mx-0 md:flex md:overflow-x-auto ">
+
+      {% for land in  lands %}
+        <div class="building-cards font-poppins">
+          <img class="w-full h-[147.28px] md:h-[473px] rounded-[6.23px] md:rounded-[20px] object-cover" src="../static/img/building-card-images/image 18.png" alt="">
+          <h3 class="card-heading">{{land.title}}</h3>
+          <p class="card-paragraph">{{land.location}}</p>
+          <div class="card-footer-container flex justify-between mt-[13.47px] md:mt-11">
+            <div class="">
+              <span class="card-price">₦{{ land.price|intcomma }}</span>
+              <p class="font-semibold text-[7.47px] leading-[10.9px] md:text-2xl md:leading-[40px]">Per {{land.per_sqr_meters}}sqm</p>
+            </div>
+            <div class="">
+              <button class="buy-now-btn">Buy Now</button>
+              <button class="building-layout-btn ">View Layout</button>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      
+    </div>
+  </section>
+
+
+  <section class="w-[91%] mx-auto mt-[68px] md:mt-[127px] px-2 sm:px-5">
+    <h2 class="text-center max-w-[75%] mx-auto mb-[30px] md:mb-[33px]">All land comes with</h2>
+
+    <div class="w-[1104px] min-w-fit md:h-[157px] min-h-fit max-w-full border-primary_green border-[3px] rounded-[20px] flex flex-col md:flex-row  justify-around items-center mx-auto py-14 font-inter">
+      
+      <div class="flex flex-col items-center mb-[85px] md:mb-0 px-3 ">
+        <img class="" src="../static/img/icons/survey-icon.svg" alt="">
+        <p class="mt-[18px] md:mt-1 font-medium leading-[29.5px] text-2xl text-center px-3 md:px-0">REGISTERED SURVEY PLAN</p>
+      </div>
+
+      <div class="flex flex-col items-center mb-[85px] md:mb-0 px-3 ">
+        <img class="" src="../static/img/icons/conveyance-icon.svg" alt="">
+        <p class="mt-[18px] md:mt-1 font-medium leading-[29.5px] text-2xl text-center px-3 md:px-0">DEED OF CONVEYANCE</p>
+      </div>
+
+      <div class="flex flex-col items-center mb-[85px] md:mb-0 px-3 ">
+        <img class="" src="../static/img/icons/allocation-icon.svg" alt="">
+        <p class="mt-[18px] md:mt-1 font-medium leading-[29.5px] text-2xl text-center px-3 md:px-0">INSTANT ALLOCATION</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-[76px] md:mt-[256px] mb-[127px] md:mb-[250px]  w-[91%] mx-auto font-inter">
+
+    <div class="grid grid-cols-1  md:grid-cols-2 gap-x-10 gap-y-10">
+
+      <div class=" order-2 md:order-1">
+        <h2 class="text-center md:text-start mb-6 md:mb-5">Why choose us for your property needs</h2>
+        <p class="text-2xl text-center md:text-start leading-7 mb-8">we are reliable and true to all acquiring and documentation processes  </p>
+
+        <div class="mb-5">
+          <div class="importance-container bg-milk shadow-[0px_2.16508px_2.16508px_rgba(0,0,0,0.25)] md:shadow-none">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Affordable Prices</h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">we are reliable and true to all acquiring and
+                documentation processes </p>
+            </div>
+          </div>
+
+          <div class="importance-container ">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Strategic position</h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">All our properties are situated at future enhancing
+                and money yielding locations across Nigeria and beyond</p>
+            </div>
+          </div>
+
+          <div class="importance-container ">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Government approved </h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">We are a registered company with RC number 1892071,
+                all our properties and business transactions are recognized by the federal republic of Nigerian
+                Government. </p>
+            </div>
+          </div>
+
+          <div class="importance-container ">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Suitable Payment Plan </h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">We are a registered company with RC number 1892071, all our properties and business transactions are recognized by the federal republic of Nigerian Government. </p>
+            </div>
+          </div>
+
+          <div class="importance-container ">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Complete and Leggit Document </h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">We are a registered company with RC number 1892071, all our properties and business transactions are recognized by the federal republic of Nigerian Government. </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <img class="order-1 md:order-2 md:mb-0 h-full object-cover rounded-[20px]" src="../static/img/office-buildings.png" alt="">
+
+    </div>
+  </section>
+
+{% endblock %}

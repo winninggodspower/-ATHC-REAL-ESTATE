@@ -1,0 +1,257 @@
+{% extends 'default_routes/layout.html' %}  
+{% load wagtailimages_tags %}
+
+
+{% block head %}
+  <title>ATHC | Home</title>
+{% endblock %}
+
+{% block body %}
+  <section id="section-1" class="md:h-[806px] md:bg-hero-image-1 ">
+
+    <div class="w-[92%] mx-auto">
+      <div class="md:flex flex-row text-center text-primary_blue font-polar_one  md:pt-[113px] ">
+        <span
+          class="md:writing-mode-vertical-rl md:rotate-180 text-5xl sm:text-[55px] md:text-[100px] leading-tight mx-auto md:mx-0">GET</span>
+        <br>
+        <div
+          class="text-4xl sm:text-[53px] text-center md:text-start mx-auto md:mx-0 leading-tight overflow-wrap-anywhere">
+          <span class="text-primary_green text-4xl sm:text-[55.55px] md:text-8xl ">LUXURY</span>
+          <span class="text-[30.67px] md:text-[53px]">@</span> <br>
+          <span class="text-primary_green">AFFORDABLE</span> <br>
+          <span>PRICE</span>
+        </div>
+      </div>
+
+      <p class="md:ms-6 mt-7 md:mt-9 text-center md:text-start">
+        Creating a platform for comfort, affordability, <br>
+        financial freedom and wealth generation for <br>
+        everyone.
+      </p>
+
+      <a href="tel:+234 906 9549 946" class="ms-6 mt-11 hidden md:block btn-primary w-fit">CONTACT US</a>
+
+    </div>
+
+    <img class="h-[489px] w-full md:hidden object-cover object-right-bottom" src="../static/img/apartment_building.png"
+      height="489" alt="">
+
+  </section>
+
+
+  <section id="section-2" class="py-28 md:py-40 w-[91%] mx-auto px-2">
+    <div class="md:grid grid-cols-[auto_51%] gap-x-20">
+      <p class="text-justify md:text-start font-inter text-xl md:text-3xl leading-9 md:leading-[70px] md:order-2 py-1">
+        Hi there, welcome to the official website of Adeyemi Tosin Homes and Consult Limited. It is no news that real
+        estate is one of the most profiting investment today and as such many real estate companies and people around
+        the world has come to the knowledge of investing and creating financial stability for themselves. Lot of persons
+        also think that investing in real estate is only for the rich which is not true. Here at ATHC we make life easy
+        and financial security avaliable to every one.
+      </p>
+      <img class="md:order-1 h-[495px] md:h-[843px] w-full " src="../static/img/street_building.png" alt="">
+    </div>
+  </section>
+
+  <section id="section-3" class="w-[91%] mx-auto ">
+    <h2 class="text-center ">What we do here at ATHC</h2>
+
+    <div class="my-[82px] font-poppins relative md:h-[750px] ">
+
+      <div class="group box-container flex flex-col md:flex-col-reverse items-center mb-24 md:mb-0"
+        data-paragraph-text="We specialize in land sales in major and strategic positions, we sale lands with value"
+        data-cta-text="view more">
+        <div class="box ">
+          <img src="../static/img/group-icons/land-sales.svg" width="50px" height="38.2px" alt="">
+        </div>
+        <p class="box-text ">Land Sales</p>
+      </div>
+
+      <div
+        class="group box-container flex flex-col md:flex-row-reverse  items-center mb-24 md:mb-0 md:absolute left-0 top-1/2 md:-translate-y-1/2"
+        data-paragraph-text="Using the right management tools, we specialize in making estate value increase with time."
+        data-cta-text="contact us">
+        <div class="box ">
+          <img src="../static/img/group-icons/estate-management.svg" width="51px" height="43px" alt="">
+        </div>
+        <p class="box-text md:text-end md:me-5">Estate <br> Management</p>
+      </div>
+
+      <div
+        class="group box-container flex flex-col md:flex-row-reverse items-center mb-24 md:mb-0 md:absolute bottom-0 left-14 "
+        data-paragraph-text="We are  specialized in risk management and investment decision making."
+        data-cta-text="contact us">
+        <div class="box">
+          <img src="../static/img/group-icons/land-aquisition.svg" width="51.49px" height="48.57px" alt="">
+        </div>
+        <p class="box-text md:text-end md:me-5">Mitigation of land <br> acquisition</p>
+      </div>
+
+      <div
+        class="group box-container flex flex-col md:flex-row items-center mb-24 md:mb-0 md:absolute right-0 top-1/2 md:-translate-y-1/2"
+        data-paragraph-text="We also handle rental services for all kind of space" data-cta-text="contact us">
+        <div class="box">
+          <img src="../static/img/group-icons/rental-apartment.svg" width="51.49px" height="48.57px" alt="">
+        </div>
+        <p class="box-text md:text-start md:ms-5 ">Rental of <br> apartment</p>
+      </div>
+
+
+      <div
+        class="group box-container flex flex-col md:flex-row  items-center mb-24 md:mb-0 md:absolute bottom-0 right-0"
+        data-paragraph-text="Our team of engineers and surveyors is ever ready to design and build your dream space with time."
+        data-cta-text="contact us">
+        <div class="box">
+          <img src="../static/img/group-icons/architechture-design.svg" width="40.28px" height="62.77px" alt="">
+        </div>
+        <p class="box-text md:text-start md:ms-5 ">Architectural design/ <br> Construction</p>
+      </div>
+
+      <div
+        class="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  text-center max-w-[393px]">
+        <p id="middle-pagagraph" class="text-base font-normal leading-6">We specialize in land sales in major and
+          strategic positions, we sale lands with value</p>
+        <a id="middle-cta" href="tel:+234 906 9549 946" class="text-primary_green uppercase mt-5 block font-bold text-base">View More</a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="../static/js/boxContainer.js"></script>
+
+  <section id="section-4" class="my-36  w-[91%] mx-auto font-inter">
+
+    <div class="md:grid grid-cols-2 gap-x-10">
+
+      <div class="mb-16">
+        <h2 class="text-center md:text-start mb-6 md:mb-5">Why choose us for your property needs</h2>
+        <p class="text-2xl text-center md:text-start leading-7 mb-8">we are reliable and true to all acquiring and documentation processes </p>
+
+        <div class="mb-5">
+          <div class="importance-container bg-milk shadow-[0px_2.16508px_2.16508px_rgba(0,0,0,0.25)] md:shadow-none">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Affordable Prices</h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">we are reliable and true to all acquiring and
+                documentation processes </p>
+            </div>
+          </div>
+
+          <div class="importance-container ">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Strategic position</h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">All our properties are situated at future enhancing
+                and money yielding locations across Nigeria and beyond</p>
+            </div>
+          </div>
+
+          <div class="importance-container ">
+            <div class="me-6 hidden md:block shrink-0">
+              <img src="../static/img/icons/check-icon.svg" width="30px" height="30px" alt="">
+            </div>
+            <div class="shrink">
+              <h3>Government approved </h3>
+              <p class=" md:text-xl leading-[18px] md:leading-7 ">We are a registered company with RC number 1892071,
+                all our properties and business transactions are recognized by the federal republic of Nigerian
+                Government. </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-primary ms-12">LEARN MORE</button>
+      </div>
+
+      <img src="../static/img/office-buildings.png" alt="">
+
+    </div>
+  </section>
+
+  <section id="section-5" class="w-[91%] mx-auto ">
+    <h2 class="text-center md:w-[630px] mx-auto">Easy steps to buy property from ATHC</h2>
+
+    <ol class="grid justify-center md:grid-cols-4 gap-4 mt-10 md:mt-[71px]">
+      <li class="step bg-light_green">
+        <span class="number">1.</span>
+        <h4>View Listing</h4>
+        <p class="text-sm md:text-xl leading-4 md:leading-6  ">Go through our available properties. check the prices
+          that fits budgets.</p>
+      </li>
+      <li class="step">
+        <span class="number">2.</span>
+        <h4>Contact Us</h4>
+        <p class="text-sm md:text-xl leading-4 md:leading-6  ">Give us a call to verify your choice and ask for more
+          informatuon if need be.</p>
+      </li>
+      <li class="step">
+        <span class="number">3.</span>
+        <h4>Inspection</h4>
+        <p class="text-sm md:text-xl leading-4 md:leading-6  ">Schedule a date to come view the property you intend
+          buying.</p>
+      </li>
+      <li class="step">
+        <span class="number">4.</span>
+        <h4>Make Payment</h4>
+        <p class="text-sm md:text-xl leading-4 md:leading-6  ">Make payment only when you are convinced it is the
+          property you wish to acquire.</p>
+      </li>
+    </ol>
+
+    <a href="tel:+">
+      <button class="btn-primary block md:inline mx-auto ">CONTACT US</button>
+    </a>
+
+  </section>
+
+
+  <section id="section-6" class="w-[91%] mx-auto my-[171px]">
+    <div class="md:grid grid-cols-2 gap-x-20 font-inter">
+
+      <img class="hidden md:inline" src="../static/img/athc-mockup.png" alt="">
+
+      <div class="">
+        <h2 class="text-center md:text-start mt-20 mb-6 md:mb-0">Become an ATHC executive sales patner</h2>
+        <div class="text-base md:text-2xl leading-[30px] md:leading-[65px] font-medium px-5">
+          <img class="md:hidden mt-12" src="../static/img/athc-mockup.png" alt="">
+          <p class="text-center md:text-start mt-9">Register as a ATHC Sales Partner and enjoy. </p>
+          <ol class="text-center md:text-start ">
+            <li>1. Free rides from us on any day to take your clients and yourself to visit our properties</li>
+            <li>2. Quick commissions of total of 3-5% commission on any sales </li>
+            <li>3. 10% commission for registered ESPs</li>
+            <li>4. You also get free marketing materials and be first to know about our new product offerings or
+              discounts before the public.</li>
+          </ol>
+        </div>
+        <button class="btn-primary px-16 mt-8 block md:inline mx-auto">JOIN US</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="section-7" class="pb-[240px]">
+    <h2 class="text-center mb-[50px] md:mb-[67px] max-w-[91%] mx-auto ">What our clients are saying</h2>
+
+    <div class="md:py-24 md:bg-milk">
+      <div class="flex overflow-y-hidden md:ms-24">
+        
+        {% for testimonial in  testimonials %}
+          <div
+            class="bg-white md:bg-light_green md:flex p-10 me-5 rounded-[10px] gap-x-6 min-w-full md:min-w-[500px] shadow-[0px_0px_7px_rgba(0,0,0,0.25)]">
+            {% image testimonial.user_image width-104 class="mx-auto" height="100px" %}
+            <div class="text-center md:text-start">
+              <h5>{{testimonial.name}}</h5>
+              <p class="text-base md:text-xl leading-5 md:leading-6">{{testimonial.review}} </p>
+            </div>
+          </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}

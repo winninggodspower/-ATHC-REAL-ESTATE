@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
+
+{% block body_class %}template-blogindexpage{% endblock %}
+
+{% block content %}
+    {% include "default_routes/components/navbar.html" %}
+
+    <section id="section-1" class="h-[434px] md:h-[835px] object-center bg-cover bg-no-repeat blog-heading-image-mobile md:blog-heading-image " >
+        <div class="w-full h-full flex flex-col items-center justify-center ">
+            <h1 class="text-center text-white font-poppins font-semibold text-5xl md:text-9xl uppercase">{{ page.title }}</h1>
+    
+            <a href="#" class="md:hidden">
+              <img src="../static/img/icons/whatsapp-mobile-icon.png" width="81px" height="33px" alt="">
+            </a>
+    
+        </div>
+        
+    </section>
+
+    {% include "search/search-form.html" %}
+
+    
+  <section class="w-[92%] mx-auto font-poppins mb-[146px] md:mb-[249px]">
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(100%,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(411px,1fr))] justify-items-center gap-y-[102px] md:gap-y-[124px] max-w-full">
+        
+        {% for post in blogpages %}
+            
+          {% with post.specific as post %}
+            {% include "blog/blog_card.html" %}
+          {% endwith %}
+
+        {% endfor %}        
+        
+    </div>
+  </section>
+
+  {% include "default_routes/components/footer.html" %}
+    
+    
+{% endblock %}

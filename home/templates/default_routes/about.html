@@ -1,0 +1,128 @@
+{% extends 'default_routes/layout.html' %}  
+
+{% block head %}
+  <title>ATHC | Home</title>
+{% endblock %}
+
+{% block body %}
+  <section id="section-1" class="h-[407px] md:h-[833px] object-contain object-center" style="background-image: linear-gradient(rgba(57, 51, 51, 0.1), rgba(57, 51, 51, 0.1)), url(/static/img/athc-team.png) ;">
+    <div class="w-full h-full flex flex-col items-center justify-center relative">
+        <h1 class="text-center text-white font-poppins font-semibold text-5xl md:text-9xl ">ABOUT US</h1>
+
+        <a href="#" class="md:hidden">
+          <img src="../static/img/icons/whatsapp-mobile-icon.png" width="81px" height="33px" alt="">
+        </a>
+
+        <div id="stats" class="w-[956px] max-w-full bg-[rgba(241,241,241,0.7)] md:rounded-[14px] font-poppins shadow-[0px_2.9875px_2.9875px_rgba(0,0,0,0.25)] mx-auto py-2 flex justify-evenly absolute md:static -bottom-12">
+            <div>
+                <h4 class="stats-heading">2000+</h4>
+                <p class="stats-paragraph">properties sold</p>
+            </div>
+            <div>
+                <h4 class="stats-heading">3000+</h4>
+                <p class="stats-paragraph">property ready</p>
+            </div>
+            <div>
+                <h4 class="stats-heading">500+</h4>
+                <p class="stats-paragraph">Satisfied customers</p>
+            </div>
+        </div>
+    </div>
+    
+  </section>
+
+  <section class=" my-16 md:my-[113px] px-5 ">
+    <p class="text-center md:text-start w-[1270px] mx-auto max-w-full font-inter text-xl md:text-3xl leading-9 md:leading-[60px]">Adeyemi Tosin Homes and Consult Limited is a renowned real estate company, registered (with RC number : 1892071) and recognized by the federal republic of Nigeria. It has several branches in Nigeria with its head quarters situated at Neckta  avenue, GU ake road beside shell cooperative estate.
+    </p>
+  </section>
+
+  <section class="mt-6 md:mt-10">
+    <div class="flex justify-center mx-4">
+        <img class="object-cover md:hidden" src="../static/img/about-images/Frame 20.png" alt="">
+        <img class="object-cover hidden md:inline" src="../static/img/about-images/Group 10.png" alt="">
+    </div>
+  </section>
+
+  <section class="bg-milk py-12 mt-32 md:mt-60">
+    <h2 class="text-center mb-[74px] md:mb-[60px]">Our Core Val</h2>
+
+    <div class="bg-milk md:flex flex-wrap lg:flex-nowrap justify-between mx-auto w-[91%]">
+
+      <div class="core-values mb-[85px] md:mb-5">
+        <div class="core-values-circle mb-6">
+          v
+        </div>
+        <p class="core-values-text ">Value for clients and customers</p>
+      </div>
+
+      <div class="core-values mb-[85px] md:mb-5">
+        <div class="core-values-circle mb-6 bg-[#FEDB25]">
+          A
+        </div>
+        <p class="core-values-text ">Value for clients and customers</p>
+      </div>
+
+      <div class="core-values mb-[85px] md:mb-5">
+        <div class="core-values-circle mb-6 bg-[#EF0303]">
+          L
+        </div>
+        <p class="core-values-text ">Value for clients and customers</p>
+      </div>
+
+      <div class="core-values mb-[85px] md:mb-5">
+        <div class="core-values-circle mb-6 bg-[#0C0290]">
+          U
+        </div>
+        <p class="core-values-text ">Value for clients and customers</p>
+      </div>
+
+      <div class="core-values mb-[85px] md:mb-5">
+        <div class="core-values-circle mb-6 bg-[#24D316]">
+          E
+        </div>
+        <p class="core-values-text ">Value for clients and customers</p>
+      </div>
+
+      <div class="core-values mb-[85px] md:mb-5">
+        <div class="core-values-circle mb-6 bg-[#FEDB25]">
+          S
+        </div>
+        <p class="core-values-text ">Value for clients and customers</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="meet-the-team mt-32 md:mt-[309px] mb-[132px] md:mb-[235px]">
+    <h2 class="text-center mb-12 md:mb-7">Meet the Team</h2>
+
+    <div class="relative md:h-[840px] flex md:block flex-col items-center px-4 sm:px-8 md:px-4 w-[92%] mx-auto font-inter">
+
+      <div class="text-center mb-8 md:mb-0 px-3 md:absolute left-1/2 md:-translate-x-1/2">
+        <img src="../static/img/team/team-member-1.png" alt="team member Adeyemi Tosin">
+        <h5 class="member-heading">Adeyemi Tosin</h5>
+        <span class="text-[10px] md:text-xl leading-3 md:leading-6">C.E.O</span>
+      </div>
+
+      <div class="text-center mb-8 md:mb-0 px-3 md:absolute left-0 top-1/2 md:-translate-y-1/2">
+        <img src="../static/img/team/team-member-2.png" alt="team member Adeyemi Tosin">
+        <h5 class="member-heading">Cynthia Ike</h5>
+        <span class="text-[10px] md:text-xl leading-3 md:leading-6">Manager</span>
+      </div>
+
+      <div class="text-center mb-8 md:mb-0 px-3 md:absolute right-0 top-1/2 md:-translate-y-1/2">
+        <img src="../static/img/team/team-member-3.png" alt="team member Adeyemi Tosin">
+        <h5 class="member-heading">Slyvie John</h5>
+        <span class="text-[10px] md:text-xl leading-3 md:leading-6">Head Marketer</span>
+      </div>
+
+      <div class="text-center mb-8 md:mb-0 px-3 md:absolute bottom-0 left-1/2 md:-translate-x-1/2">
+        <img src="../static/img/team/team-member-4.png" alt="team member Adeyemi Tosin">
+        <h5 class="member-heading">Soma Alex</h5>
+        <span class="text-[10px] md:text-xl leading-3 md:leading-6">Site Inspector</span>
+      </div>
+
+    </div>
+  </section>
+
+{% endblock %}

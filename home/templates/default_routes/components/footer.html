@@ -1,0 +1,105 @@
+{% load static %}
+
+<footer class="bg-primary_blue relative font-inter mt-52">
+
+    <div
+      class="w-[1084px] max-w-full min-h-fit md:h-[296px] mx-auto md:p-8 md:rounded-xl bg-primary_green md:flex absolute -top-24 start-1/2 -translate-x-1/2">
+      <div class="h-[140px]">
+        <img class="relative -top-20 md:-top-40 md:scale-100 overflow-clip" src="{% static 'img/building-preview.png' %}"
+          alt="">
+      </div>
+      <div class="my-auto p-4">
+        <h4 class="text-white font-bold text-xl md:text-[32px] mb-[14px] md:mb-6">Be The First To Hear From Us</h4>
+        <form action="" class="w-full flex" id="email_form">
+          {% csrf_token %}
+          <input id="email" class="me-2 h-[37px] md:h-[55px] ps-4 md:ps-8 rounded-md w-full invalid:border-red-500 invalid:text-red-500
+          focus:invalid:border-pink-500 focus:invalid:ring-pink-500" type="email" placeholder="Enter your email address" required novalidate>
+          <button type="submit" id="submit_email" class="bg-primary_blue rounded-md w-[70px] flex items-center justify-center">
+            <img src="{% static 'img/icons/baseline-send.svg' %}" alt="">
+          </button>
+        </form>
+        <p class="form-error text-red-500"></p>
+        <p class="success text-blue-500"></p>
+      </div>
+    </div>
+
+
+    <div class="md:grid grid-cols-12 pt-[300px] w-[91%] mx-auto text-white font-poppins">
+
+      <div class="px-4 col-span-5 mb-14 md:mb-24 text-center md:text-start">
+        <h4 class="font-poppins text-[40px] leading-6 font-bold mb-8">
+          <span>A</span><span class="text-[#24D316]">T</span>
+          <span class="text-[#ECF103]">H</span>
+          <span class="text-[#EF0303]">C</span>
+        </h4>
+        <p class="w-[400px] max-w-full">Here at ATHC our clients satisfaction and future gain is the basic threshold of our business you cme first!
+        </p>
+        <div class="flex">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+      </div>
+
+      <div class="px-4 col-span-3 mb-14 md:mb-24 text-center md:text-start">
+        <h4 class="font-poppins text-2xl font-bold mb-4">QUICK LINKS</h4>
+        <ul>
+          <li class=""><a href="/about"> Home</a></li>
+          <li class=""><a href="/about"> About Us</a></li>
+          <li class=""><a href="/services"> Services</a></li>
+          <li class=""><a href="/blog"> Blog</a></li>
+          <li class=""><a href="{% url 'coming_soon' %}"> Invest</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="px-4 col-span-4 mb-14 md:mb-24 text-center md:text-start">
+        <h4 class="font-poppins text-2xl font-bold mb-4">CONTACT US</h4>
+        <ul>
+          <li class="mb-10">
+            <a class="md:flex items-start gap-x-3" href="#" >
+              <span >
+                <svg class="mx-auto md:mx-0 text-primary_green md:text-white" width="42px" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 3.5C14.2275 3.5 8.75 8.9775 8.75 15.75C8.75 24.9375 21 38.5 21 38.5C21 38.5 33.25 24.9375 33.25 15.75C33.25 8.9775 27.7725 3.5 21 3.5ZM21 20.125C19.8397 20.125 18.7269 19.6641 17.9064 18.8436C17.0859 18.0231 16.625 16.9103 16.625 15.75C16.625 14.5897 17.0859 13.4769 17.9064 12.6564C18.7269 11.8359 19.8397 11.375 21 11.375C22.1603 11.375 23.2731 11.8359 24.0936 12.6564C24.9141 13.4769 25.375 14.5897 25.375 15.75C25.375 16.9103 24.9141 18.0231 24.0936 18.8436C23.2731 19.6641 22.1603 20.125 21 20.125Z" fill="currentColor"/>
+                </svg>
+              </span>
+                
+              Neckta avenue, GU ake road beside
+              shell cooperative estate.
+            </a>
+          </li>
+          <li class="mb-10">
+            <a class="md:flex items-start gap-x-3 " href="tel:+234 906 9549 946">
+              <span >
+                <svg class="mx-auto md:mx-0 text-primary_green md:text-white" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M28 19.1626V13.9126H22.75V10.4126H28V5.1626H31.5V10.4126H36.75V13.9126H31.5V19.1626H28ZM34.9125 36.7501C31.15 36.7501 27.482 35.9188 23.9085 34.2563C20.335 32.5938 17.1704 30.3772 14.4148 27.6063C11.6591 24.8355 9.44242 21.6633 7.76475 18.0898C6.08708 14.5163 5.24883 10.8489 5.25 7.0876V6.16885C5.25 5.84801 5.27917 5.54176 5.3375 5.2501H15.575L17.1938 14.0438L12.2063 19.0751C13.4313 21.1751 14.9701 23.1438 16.8228 24.9813C18.6754 26.8188 20.7095 28.4084 22.925 29.7501L28 24.6751L36.75 26.4251V36.6626C36.4583 36.6918 36.1521 36.7139 35.8313 36.7291C35.5104 36.7443 35.2042 36.7513 34.9125 36.7501Z" fill="currentColor"/>
+                </svg>
+              </span>
+              +234 906 9549 946
+            </a>
+                
+          </li>
+          <li class="mb-10 ">
+            <a class="md:flex items-start gap-x-3 mb-10 overflow-wrap-anywhere" href="mailto:contact@adeyemitosinhome.com">
+              <span>
+                <svg class="mx-auto md:mx-0 text-primary_green md:text-white" width="42" height="42" viewBox="0 0 42 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 7H7C5.075 7 3.5175 8.575 3.5175 10.5L3.5 31.5C3.5 33.425 5.075 35 7 35H35C36.925 35 38.5 33.425 38.5 31.5V10.5C38.5 8.575 36.925 7 35 7ZM35 14L21 22.75L7 14V10.5L21 19.25L35 10.5V14Z" fill="currentColor"/>
+                </svg>
+              </span>
+              contact@adeyemitosinhome.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="reserve" class="p-8 border-t text-center text-sm md:text-base leading-5 text-white">
+      2023     @   All Rights Reserved, 
+      Adeyemi Tosin homes and consult Ltd.
+    </div>
+
+  </footer>
+
+  <script src="{% static 'js/newsletter.js' %}" ></script>

@@ -34,20 +34,29 @@
         </h4>
         <p class="w-[400px] max-w-full">Here at ATHC our clients satisfaction and future gain is the basic threshold of our business you cme first!
         </p>
-        <div class="flex">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+        <div class="flex gap-x-6 mt-7 md:mt-9 justify-center md:justify-start">
+          <a href="https://www.instagram.com/adeyemi_tosins_homes_consult/">
+            <img width="45" src="{% static 'img/social-icons/ph_instagram-logo-fill.svg' %}" alt="">
+          </a>
+          <a href="https://web.facebook.com/Adeyemitosinhomes">
+            <img width="45" src="{% static 'img/social-icons/ic_baseline-facebook.svg' %}" alt="">
+          </a>
+          <a href="">
+            <img width="45" src="{% static 'img/social-icons/mdi_twitter.svg' %}" alt="">
+          </a>
+          <a href="">
+            <img width="45" src="{% static 'img/social-icons/mdi_linkedin.svg' %}" alt="">
+          </a>
+          
         </div>
       </div>
 
       <div class="px-4 col-span-3 mb-14 md:mb-24 text-center md:text-start">
         <h4 class="font-poppins text-2xl font-bold mb-4">QUICK LINKS</h4>
         <ul>
-          <li class=""><a href="/about"> Home</a></li>
-          <li class=""><a href="/about"> About Us</a></li>
-          <li class=""><a href="/services"> Services</a></li>
+          <li class=""><a href="{% url 'homepage' %}"> Home</a></li>
+          <li class=""><a href="{% url 'about' %}"> About Us</a></li>
+          <li class=""><a href="{% url 'services' %}"> Services</a></li>
           <li class=""><a href="/blog"> Blog</a></li>
           <li class=""><a href="{% url 'coming_soon' %}"> Invest</a></li>
         </ul>

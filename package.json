@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "tailwindcss -i ./home/static/css/input.css -o ./home/static/css/output.css --watch --minify"
+    "build-css": "tailwindcss -i ./home/static/css/input.css -o ./home/static/css/output.css --watch --minify",
+    "build-js": "webpack"
   },
   "author": "",
   "license": "ISC",

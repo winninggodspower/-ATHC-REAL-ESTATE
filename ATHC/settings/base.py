@@ -87,12 +87,8 @@ WSGI_APPLICATION = "ATHC.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        'NAME': 'adeyemit_db',
-        'USER': 'adeyemit_db_adeyemit',
-        'PASSWORD': 'B&NO9{YubnUr',
-        'HOST':'https://www.adeyemitosinhome.com',
-        'PORT':'3306',
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
     }
 }
 

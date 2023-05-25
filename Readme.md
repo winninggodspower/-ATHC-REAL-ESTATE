@@ -20,3 +20,11 @@ Adeyemi Tosin Homes and Consult Limited is a renowned real estate company, regis
 2. set up github actions                  -----
 3. setup database                         ----- 
 4. createsuper user and setup admin panel ----- 
+
+# Notes For Developers
+- after the creation of any new javascript file. it should be added to the webpack configuration so that it can be minified, and your html file should link to the minified file
+
+# Things to do before pushing to github
+- run collectstatic command
+- pull latest changes from cpanel server
+- stop and start the cpanel server

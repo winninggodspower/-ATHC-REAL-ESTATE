@@ -1,0 +1,1 @@
+(()=>{const t=document.getElementById("nav-toggler"),e=document.getElementById("nav-link");t.addEventListener("click",(function(s){"closed"===t.dataset.state?(t.src="../static/img/icons/menu-close.svg",t.dataset.state="open"):(t.src="../static/img/icons/menu-open.svg",t.dataset.state="closed"),e.classList.toggle("top-[48px]")}))})();

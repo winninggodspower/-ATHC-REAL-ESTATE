@@ -7,6 +7,9 @@ db.sqlite3
 media
 ATHC/settings/local.py
 
+# node
+node_modules
+
 # Backup files # 
 *.bak 
 

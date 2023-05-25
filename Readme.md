@@ -16,7 +16,7 @@ Adeyemi Tosin Homes and Consult Limited is a renowned real estate company, regis
 
 
 ## Things to do
-1. setup environment variables
-2. set up github actions
-3. setup database
-4. createsuper user and setup admin panel
+1. setup environment variables            ----- done 
+2. set up github actions                  -----
+3. setup database                         ----- 
+4. createsuper user and setup admin panel ----- 

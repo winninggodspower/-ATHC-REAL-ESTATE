@@ -13,3 +13,10 @@ Adeyemi Tosin Homes and Consult Limited is a renowned real estate company, regis
 `python manage.py runserver` to start django development server
 
 `npm run build-css` to start tailwind css build in watch mode
+
+
+## Things to do
+1. setup environment variables
+2. set up github actions
+3. setup database
+4. createsuper user and setup admin panel

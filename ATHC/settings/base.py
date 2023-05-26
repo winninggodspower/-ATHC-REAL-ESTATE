@@ -87,15 +87,23 @@ WSGI_APPLICATION = "ATHC.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "adeyemit_db",
+        "USER": "adeyemit_db_adeyemit",
+        'PASSWORD': 'B&NO9{YubnUr',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
     }
 }
 
-# name = adeyemit_db
-# username = adeyemit_db_adeyemit
-# password = B&NO9{YubnUr
-
+# "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "adeyemit_db",
+#         "USER": "adeyemit_db_adeyemit",
+#         'PASSWORD': 'B&NO9{YubnUr',
+#         'HOST': 'https://www.adeyemitosinhome.com',   # Or an IP Address that your DB is hosted on
+#         'PORT': '3306',
+#     }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

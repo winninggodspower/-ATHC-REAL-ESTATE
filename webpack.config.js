@@ -10,6 +10,7 @@ const homeJsFile = {
 
 module.exports = {
   mode: "production",
+  watch: true,
   entry: {
     ...homeJsFile
   },

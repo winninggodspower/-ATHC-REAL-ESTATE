@@ -1,5 +1,8 @@
-{% extends 'default_routes/layout.html' %}  
+{% extends 'default_routes/layout.html' %}
+
 {% load humanize %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load static %}
 
 {% block head %}
   <title>ATHC | Home</title>
@@ -32,7 +35,7 @@
 
       {% for land in  lands %}
         <div class="building-cards font-poppins">
-          <img class="w-full h-[147.28px] md:h-[473px] rounded-[6.23px] md:rounded-[20px] object-cover" src="../static/img/building-card-images/image 18.png" alt="">
+        {% image land.land_image class="w-full h-[147.28px] md:h-[473px] rounded-[6.23px] md:rounded-[20px] object-cover" fill-160x100 %}
           <h3 class="card-heading">{{land.title}}</h3>
           <p class="card-paragraph">{{land.location}}</p>
           <div class="card-footer-container flex justify-between mt-[13.47px] md:mt-11">
@@ -42,14 +45,22 @@
             </div>
             <div class="">
               <button class="buy-now-btn">Buy Now</button>
-              <button class="building-layout-btn ">View Layout</button>
+              <button id="land-{{land.id}}" data-land-id="{{land.id}}" class="building-layout-btn">View Layout</button>
             </div>
+          </div>
+        </div>
+        
+        <div id="land-layout-{{land.id}}" class="hidden fixed top-0 bottom-0 left-0 right-0 h-screen p-4 md:p-8 bg-white">
+          <img class="building-layout-close-icon cursor-pointer" data-land-id="{{land.id}}" src="../static/img/icons/menu-close.svg" alt="">
+          <div class="flex items-center h-full">
+            {% image land.layout_image class="max-w-full min-w-[50%] mx-auto h-fit " fill-160x100 %}
           </div>
         </div>
       {% endfor %}
       
     </div>
   </section>
+  <script src="{% static 'js_bundle/landLayoutPopup.bundle.js' %}"></script>
 
 
   <section class="w-[91%] mx-auto mt-[68px] md:mt-[127px] px-2 sm:px-5">

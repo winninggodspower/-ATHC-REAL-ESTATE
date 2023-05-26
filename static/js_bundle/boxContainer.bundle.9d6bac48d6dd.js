@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelectorAll(".box-container"),t=document.querySelector("#middle-pagagraph"),c=document.querySelector("#middle-cta");function r(e){const r=e.currentTarget;t.innerHTML=r.dataset.paragraphText||"lorem ipsum text",c.innerHTML=r.dataset.ctaText||"contact us"}e.forEach((e=>{e.addEventListener("click",r)}))})();

@@ -9,6 +9,7 @@ ATHC/settings/local.py
 
 # node
 node_modules
+see.txt
 
 # Backup files # 
 *.bak 

@@ -35,7 +35,6 @@ isort==5.6.4
 l18n==2021.3
 mccabe==0.7.0
 mypy-extensions==1.0.0
-mysqlclient==2.1.1
 openpyxl==3.1.2
 parsy==1.1.0
 pathspec==0.11.1

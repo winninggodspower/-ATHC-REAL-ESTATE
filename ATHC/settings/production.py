@@ -1,6 +1,6 @@
 from .base import *
 
-ALLOWED_HOSTS = ["https://www.adeyemitosinhome.com", "https://adeyemitosinhome.com", "adeyemitosinhome.com"]
+ALLOWED_HOSTS = ["www.adeyemitosinhome.com", "adeyemitosinhome.com", "localhost"]
 
 DEBUG = False
 

@@ -5,7 +5,8 @@ const homeJsFile = {
     boxContainer : path.resolve(homeJsPath, "boxContainer.js"),
     navBarToggler : path.resolve(homeJsPath, "navBarToggler.js"),
     newsletter : path.resolve(homeJsPath, "newsletter.js"),
-    landLayoutPopup: path.resolve(homeJsPath, "landLayoutPopup.js")
+    landLayoutPopup: path.resolve(homeJsPath, "landLayoutPopup.js"),
+    testimonialSlider: path.resolve(homeJsPath, "testimonialSlider.js"),
 }
 
 module.exports = {

@@ -237,7 +237,7 @@
     <h2 class="text-center mb-[50px] md:mb-[67px] max-w-[91%] mx-auto ">What our clients are saying</h2>
 
     <div class="md:py-24 md:bg-milk">
-      <div class="flex overflow-y-hidden md:ms-24 snap-x snap-mandatory transition-all testimonial-scroll-container">
+      <div class="flex overflow-y-hidden md:ms-24 snap-x snap-mandatory transition-all delay-1000 testimonial-scroll-container">
         
         {% for testimonial in  testimonials %}
           <div
@@ -247,9 +247,9 @@
               <h5>{{testimonial.name}}</h5>
               <p class="text-base md:text-xl leading-5 md:leading-6">{{testimonial.review}} </p>
             </div>
-            <div class="relative left-0 w-full flex justify-between md:hidden">
-              <img src="{% static 'img/icons/slider-icons/arrow-back.svg' %}" alt="">
-              <img src="{% static 'img/icons/slider-icons/arrow-forward.svg' %}" alt="">
+            <div class="relative left-0 -bottom-7 w-full flex justify-between md:hidden">
+              <img class="prevBtn cursor-pointer" src="{% static 'img/icons/slider-icons/arrow-back.svg' %}" alt="">
+              <img class="nextBtn cursor-pointer" src="{% static 'img/icons/slider-icons/arrow-forward.svg' %}" alt="">
             </div>
           </div>
         {% endfor %}
@@ -258,6 +258,6 @@
     </div>
 
   </section>
-
+  <script src="{% static 'js_bundle/testimonialSlider.bundle.js'%}"></script>
 
 {% endblock %}

@@ -15,16 +15,11 @@ Adeyemi Tosin Homes and Consult Limited is a renowned real estate company, regis
 `npm run build-css` to start tailwind css build in watch mode
 
 
-## Things to do
-1. setup environment variables            ----- done 
-2. set up github actions                  -----
-3. setup database                         ----- 
-4. createsuper user and setup admin panel ----- 
-
 # Notes For Developers
 - after the creation of any new javascript file. it should be added to the webpack configuration so that it can be minified, and your html file should link to the minified file
 
-# Things to do before pushing to github
+# Things to do before after every code change
 - run collectstatic command
 - pull latest changes from cpanel server
 - stop and start the cpanel server
+- copy the static folder to the public_html folder

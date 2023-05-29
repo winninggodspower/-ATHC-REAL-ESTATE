@@ -130,3 +130,12 @@
                 @apply text-xl md:text-2xl leading-[25px] md:leading-[30px] mb-20;
         }
 }
+
+.testimonial-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

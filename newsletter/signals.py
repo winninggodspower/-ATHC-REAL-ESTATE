@@ -4,7 +4,6 @@ from django.dispatch import receiver
 from django.conf import settings
 from django.core.mail import send_mail
 
-print(settings.ALLOWED_HOSTS)
 
 @receiver(post_save, sender=NewsLetterEmail)
 def send_confirmation_email(sender, instance, created, **kwargs):

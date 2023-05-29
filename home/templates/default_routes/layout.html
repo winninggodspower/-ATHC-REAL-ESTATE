@@ -7,13 +7,17 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/output.css' %}" />
     <link rel="icon" href="{% static 'img/icons/site-logo.svg' %}">
-
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    
     {% block head %} {% endblock %}
   </head>
   <body class="overflow-x-hidden">
     <!-- this div is used to store classes that will be injected by javascript
-  so they can be bundled into production -->
+      so they can be bundled into production -->
     <div class="hidden top-[48px] min-w-[50%]"></div>
+      
+    <!-- whatsapp icon from elfsight -->
+    <div class="elfsight-app-96bae7bc-103b-45e3-9852-2c3c89a59418 "></div>
 
     {% include "default_routes/components/navbar.html" %}
     

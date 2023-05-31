@@ -59,7 +59,7 @@
         }
 
         .step{
-                @apply max-w-[207px] h-[207px] md:max-w-[305px] md:h-[306px] md:min-h-fit bg-milk px-5 pt-11 md:pt-14 mb-[18px] md:mb-10 rounded-[20px];                
+                @apply max-w-[207px] h-[207px] md:max-w-[305px] md:h-[306px] md:min-h-fit bg-milk px-5 pt-11 md:pt-14 mb-[18px] md:mb-10 rounded-[20px] hover:bg-light_green cursor-pointer;                
         }
 
         .number{

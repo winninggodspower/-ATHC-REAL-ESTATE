@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block body %}
-  <section id="section-1" class="h-[283px] md:h-[833px] object-contain object-left bg-cover bg-no-repeat" style="background-image: linear-gradient(rgba(57,51,51,0.1), rgba(57,51,51,0.1)), url(/static/img/services-hero.png);">
+  <section id="section-1" class="h-[283px] md:h-[833px] object-contain object-left bg-cover bg-no-repeat" style="background-image: linear-gradient(rgba(57,51,51,0.1), rgba(57,51,51,0.1)), url(/static/img/service-hero.jpg);">
     <div class="w-full h-full flex flex-col items-center justify-center ">
         <h1 class="text-center text-white font-poppins font-semibold text-5xl md:text-9xl ">OUR SERVICES</h1>
 
@@ -23,19 +23,19 @@
 
 
   <section class="my-16 md:my-[113px] px-5 ">
-    <p class=" text-justify hyphens-auto md:text-start w-[1270px] mx-auto max-w-full font-inter text-xl md:text-3xl leading-9 md:leading-[60px]">At ATHC, we believe that everyone can gain financial freedom with making the right investment in real estate, hence it is our mandate to make the smallest of persons achieve their financial goals and security with our services and mind blowing offers. These and many more listed below are our tried and trusted services.
+    <p class=" text-justify hyphens-auto md:text-start w-[92%] mx-auto max-w-full font-inter text-xl md:text-3xl leading-9 md:leading-[60px]">At ATHC, we believe that everyone can gain financial freedom with making the right investment in real estate, hence it is our mandate to make the smallest of persons achieve their financial goals and security with our services and mind blowing offers. These and many more listed below are our tried and trusted services.
     </p>
   </section>
 
 
-  <section class="w-[1270px] max-w-full px-5 mx-auto">
+  <section class="w-[92%] max-w-full px-5 mx-auto">
     <h2 class="text-center md:text-start mb-12 md:mb-[71px]">View available lands for sale </h2>
 
     <div class="sm:mx-3 md:mx-0 md:flex md:overflow-x-auto ">
 
       {% for land in  lands %}
         <div class="building-cards font-poppins">
-        {% image land.land_image class="w-full h-[147.28px] md:h-[473px] rounded-[6.23px] md:rounded-[20px] object-cover" fill-500x500 %}
+        {% image land.land_image class="w-full h-[147.28px] md:h-[473px] rounded-[6.23px] md:rounded-[20px] object-cover" fill-955x473 %}
           <h3 class="card-heading">{{land.title}}</h3>
           <p class="card-paragraph">{{land.location}}</p>
           <div class="card-footer-container flex justify-between mt-[13.47px] md:mt-11">
@@ -51,9 +51,9 @@
         </div>
         
         <div id="land-layout-{{land.id}}" class="hidden fixed top-0 bottom-0 left-0 right-0 h-screen p-4 md:p-8 bg-white">
-          <img class="building-layout-close-icon cursor-pointer" data-land-id="{{land.id}}" src="../static/img/icons/menu-close.svg" alt="">
+          <img class="building-layout-close-icon cursor-pointer absolute" data-land-id="{{land.id}}" src="../static/img/icons/menu-close.svg" alt="">
           <div class="flex items-center h-full">
-            {% image land.layout_image class="max-w-full min-w-[50%] mx-auto h-fit " fill-160x100 %}
+            {% image land.layout_image class="max-w-[80%] max-h-[90%] mx-auto  object-contain" width-1440 %}
           </div>
         </div>
       {% endfor %}
@@ -63,7 +63,7 @@
   <script src="{% static 'js_bundle/landLayoutPopup.bundle.js' %}"></script>
 
 
-  <section class="w-[91%] mx-auto mt-[68px] md:mt-[127px] px-2 sm:px-5">
+  <section class="w-[92%] mx-auto mt-[68px] md:mt-[127px] px-2 sm:px-5">
     <h2 class="text-center max-w-[75%] mx-auto mb-[30px] md:mb-[33px]">All land comes with</h2>
 
     <div class="w-[1104px] min-w-fit md:h-[157px] min-h-fit max-w-full border-primary_green border-[3px] rounded-[20px] flex flex-col md:flex-row  justify-around items-center mx-auto py-14 font-inter">
@@ -86,7 +86,7 @@
   </section>
 
 
-  <section class="mt-[76px] md:mt-[256px] mb-[127px] md:mb-[250px]  w-[91%] mx-auto font-inter">
+  <section class="mt-[76px] md:mt-[256px] mb-[127px] md:mb-[250px]  w-[92%] mx-auto font-inter">
 
     <div class="grid grid-cols-1  md:grid-cols-2 gap-x-10 gap-y-10">
 

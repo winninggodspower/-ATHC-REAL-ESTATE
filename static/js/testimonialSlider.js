@@ -8,26 +8,27 @@ nxtBtn.forEach((btn, index) => {
     if (btn.parentElement.parentElement.parentElement.lastElementChild === btn.parentElement.parentElement){
         btn.classList += " invisible"
     }
-    btn.addEventListener('click', slideTestimonial)
+    btn.addEventListener('click', slideBuilding)
 })
 
 prevBtn.forEach((btn, index) => {
     if (btn.parentElement.parentElement.parentElement.firstElementChild === btn.parentElement.parentElement){
         btn.classList += " invisible"
     }
-    btn.addEventListener('click', slideTestimonial)
+    btn.addEventListener('click', slideBuilding)
 })
 
-function slideTestimonial(e){
+
+function slideBuilding(e){
     let testimonialWidth = scrollContainer.getBoundingClientRect().width;
     console.log(e.target.parentElement);
 
-    if (e.target.classList.contains('nextBtn')) {
-        console.log("next");
-        scrollContainer.scrollLeft += testimonialWidth;
-    }
-    else{
-        console.log("previous");
-        scrollContainer.scrollLeft -= testimonialWidth;
-    }
+    const scrollOffset = testimonialWidth * (e.target.classList.contains('nextBtn') ? 1 : -1);
+
+    scrollContainer.scrollTo({
+        left: scrollContainer.scrollLeft + scrollOffset,
+        behavior: 'smooth', // Add smooth scrolling behavior
+    });
+
+    
 }

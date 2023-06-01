@@ -22,6 +22,7 @@ Adeyemi Tosin Homes and Consult Limited is a renowned real estate company, regis
 
 # Things to do before after every code change
 - run collectstatic command
+- commit and push
 - pull latest changes from cpanel server
 - stop and start the cpanel server
 - copy the static folder to the public_html folder

@@ -5,7 +5,6 @@ const prevBtn = document.querySelector('.prevBtn');
 
 
 nxtBtn.addEventListener('click', slideBuilding)
-
 prevBtn.addEventListener('click', slideBuilding)
 
 function slideBuilding(e){

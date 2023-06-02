@@ -7,6 +7,7 @@ const homeJsFile = {
     newsletter : path.resolve(homeJsPath, "newsletter.js"),
     landLayoutPopup: path.resolve(homeJsPath, "landLayoutPopup.js"),
     testimonialSlider: path.resolve(homeJsPath, "testimonialSlider.js"),
+    buildingSlider: path.resolve(homeJsPath, "buildingSlider.js"),
 }
 
 module.exports = {

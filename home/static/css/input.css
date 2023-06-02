@@ -130,6 +130,10 @@
                 @apply text-xl md:text-2xl leading-[25px] md:leading-[30px] mb-20;
         }
 
+        .blog-content a {
+                @apply text-primary_green;
+        }
+
         .building-navigation-btn{
                 @apply  p-3 bg-milk shadow-lg rounded-[50%] disabled:text-gray-400;
         }

@@ -44,6 +44,9 @@ class BlogPage(Page):
         else:
             return None
 
+    def get_absolute_url(self):
+        return self.full_url
+
     search_fields = Page.search_fields + [
         index.SearchField('intro'),
         index.SearchField('body'),

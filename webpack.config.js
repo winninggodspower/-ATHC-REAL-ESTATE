@@ -8,6 +8,7 @@ const homeJsFile = {
     landLayoutPopup: path.resolve(homeJsPath, "landLayoutPopup.js"),
     testimonialSlider: path.resolve(homeJsPath, "testimonialSlider.js"),
     buildingSlider: path.resolve(homeJsPath, "buildingSlider.js"),
+    animation: path.resolve(homeJsPath, "animation.js"),
 }
 
 module.exports = {
@@ -19,5 +20,14 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, "home", "static", "js_bundle"),
+  },
+  module: {
+    rules: [
+      // ...
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
 };

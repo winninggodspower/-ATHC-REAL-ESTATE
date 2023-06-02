@@ -29,6 +29,5 @@ function slideBuilding(e){
         left: scrollContainer.scrollLeft + scrollOffset,
         behavior: 'smooth', // Add smooth scrolling behavior
     });
-
-    
+   
 }

@@ -12,16 +12,7 @@
             {% wagtail_site as current_site %}
             {% if current_site and current_site.site_name %}- {{ current_site.site_name }}{% endif %}
             {% endblock %}
-
-            <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PK9TPFZD1"></script>
-            <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-3PK9TPFZD1');
-            </script>
+ 
         </title>
         {% if page.search_description %}
         <meta name="description" content="{{ page.search_description }}" />
@@ -42,6 +33,16 @@
 
         <link rel="icon" href="{% static 'img/icons/site-logo.svg' %}">
         <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PK9TPFZD1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3PK9TPFZD1');
+        </script>
     </head>
 
     <body class="{% block body_class %}{% endblock %}">

@@ -82,6 +82,10 @@
                 @apply text-center  font-inter font-medium text-base md:text-lg leading-7;
         }
 
+        .core-values-description{
+                @apply text-center px-5 py-6 mt-4 mx-auto md:mt-1  text-sm font-normal bg-white rounded-md shadow-[1px_1px_3px_1px_rgb(0,0,0,0.2)] ;
+        }
+
         .member-heading {
                 @apply md:mt-4 mt-2 font-extrabold text-[14.79px] md:text-3xl leading-[18px] md:leading-9;
         }
@@ -137,6 +141,7 @@
         .building-navigation-btn{
                 @apply  p-3 bg-milk shadow-lg rounded-[50%] disabled:text-gray-400;
         }
+
 }
 
 .testimonial-scroll-container::-webkit-scrollbar {
@@ -156,4 +161,8 @@
 .testimonial-scroll-container {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.core-value-desc-width{
+        width: min(80%, 300px);
 }

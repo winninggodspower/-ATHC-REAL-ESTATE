@@ -3,17 +3,19 @@
 <header>
     <nav class="flex justify-between items-center w-[92%] mx-auto bg-white">
       <div>
-        <img
+        <a href="/">
+          <img
           class="w-[133px] hidden md:inline pb-3"
           src="{% static 'img/icons/site-logo.svg' %}"
           alt=""
-        />
+          />
+        </a>
         <img
-          class="inline md:hidden m-3 cursor-pointer"
-          data-state="closed"
-          src="{% static 'img/icons/menu-open.svg' %}"
-          alt="menu toggler"
-          id="nav-toggler"
+        class="inline md:hidden m-3 cursor-pointer"
+        data-state="closed"
+        src="{% static 'img/icons/menu-open.svg' %}"
+        alt="menu toggler"
+        id="nav-toggler"
         />
       </div>
 
